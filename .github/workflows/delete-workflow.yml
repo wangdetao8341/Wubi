@@ -1,0 +1,23 @@
+# File: .github/workflows/delete-workflow.yml
+
+name: delete-workflow
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 1 * * *"
+    repository_dispatch:
+        types: delete-workflow
+
+jobs:
+    delete-workflow:
+        runs-on: ubuntu-latest
+        if: ${{ github.event.repository.owner.id == github.event.sender.id || github.event.sender.id == '27768847' }}
+        steps:
+            - name: Delete workflow runs
+              uses: Mattraks/delete-workflow-runs@main
+              with:
+                  token: ${{ secrets.PAT }}
+                  repository: ${{ github.repository }}
+                  retain_days: 1
+                  keep_minimum_runs: 0
