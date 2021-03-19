@@ -49,6 +49,7 @@ jobs:
                   JDJOY_APPLYJDBEAN: ${{ github.event.client_payload.JDJOY_APPLYJDBEAN || secrets.JDJOY_APPLYJDBEAN }}
                   JDJOY_SHARECODES: ${{ github.event.client_payload.JDJOY_SHARECODES || secrets.JDJOY_SHARECODES }}
                   BUY_JOY_LEVEL: ${{ github.event.client_payload.BUY_JOY_LEVEL || secrets.BUY_JOY_LEVEL }}
+                  BNRE: ${{ github.event.client_payload.BNRE || secrets.BNRE }}
                   PHRE: ${{ github.event.client_payload.PHRE || secrets.PHRE }}
                   HPRE: ${{ github.event.client_payload.HPRE || secrets.HPRE }}
                   HDSTR: ${{ github.event.client_payload.HDSTR || secrets.HDSTR }}

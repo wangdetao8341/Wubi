@@ -48,6 +48,7 @@ jobs:
                   JD_BEAN_STOP: ${{ github.event.client_payload.JD_BEAN_STOP || secrets.JD_BEAN_STOP }}
                   JD_BEAN_SIGN_STOP_NOTIFY: ${{ github.event.client_payload.JD_BEAN_SIGN_STOP_NOTIFY || secrets.JD_BEAN_SIGN_STOP_NOTIFY }}
                   JD_BEAN_SIGN_NOTIFY_SIMPLE: ${{ github.event.client_payload.JD_BEAN_SIGN_NOTIFY_SIMPLE || secrets.JD_BEAN_SIGN_NOTIFY_SIMPLE }}
+                  BNRE: ${{ github.event.client_payload.BNRE || secrets.BNRE }}
                   PHRE: ${{ github.event.client_payload.PHRE || secrets.PHRE }}
                   HPRE: ${{ github.event.client_payload.HPRE || secrets.HPRE }}
                   HDSTR: ${{ github.event.client_payload.HDSTR || secrets.HDSTR }}

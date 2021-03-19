@@ -49,6 +49,7 @@ jobs:
                   JOY_RUN_FLAG: ${{ github.event.client_payload.JOY_RUN_FLAG || secrets.JOY_RUN_FLAG }}
                   JOY_TEAM_LEVEL: ${{ github.event.client_payload.JOY_TEAM_LEVEL || secrets.JOY_TEAM_LEVEL }}
                   JOY_RUN_NOTIFY: ${{ github.event.client_payload.JOY_RUN_NOTIFY || secrets.JOY_RUN_NOTIFY }}
+                  BNRE: ${{ github.event.client_payload.BNRE || secrets.BNRE }}
                   PHRE: ${{ github.event.client_payload.PHRE || secrets.PHRE }}
                   HPRE: ${{ github.event.client_payload.HPRE || secrets.HPRE }}
                   HDSTR: ${{ github.event.client_payload.HDSTR || secrets.HDSTR }}

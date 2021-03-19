@@ -47,6 +47,7 @@ jobs:
                   PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
                   SUPERMARKET_LOTTERY: ${{ github.event.client_payload.SUPERMARKET_LOTTERY || secrets.SUPERMARKET_LOTTERY }}
                   JOIN_PK_TEAM: ${{ github.event.client_payload.JOIN_PK_TEAM || secrets.JOIN_PK_TEAM }}
+                  BNRE: ${{ github.event.client_payload.BNRE || secrets.BNRE }}
                   PHRE: ${{ github.event.client_payload.PHRE || secrets.PHRE }}
                   HPRE: ${{ github.event.client_payload.HPRE || secrets.HPRE }}
                   HDSTR: ${{ github.event.client_payload.HDSTR || secrets.HDSTR }}

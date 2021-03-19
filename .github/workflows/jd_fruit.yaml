@@ -49,6 +49,7 @@ jobs:
                   FRUIT_NOTIFY_CONTROL: ${{ github.event.client_payload.FRUIT_NOTIFY_CONTROL || secrets.FRUIT_NOTIFY_CONTROL }}
                   FRUITSHARECODES: ${{ github.event.client_payload.FruitShareCodes || secrets.FruitShareCodes }}
                   IGNORE_COOKIE_JDNC: ${{ github.event.client_payload.IGNORE_COOKIE_JDNC || secrets.IGNORE_COOKIE_JDNC }} #京东农场禁用某些cookie的执行,因为通知太烦了呀,比如要禁用第2和第四个的执行,则填入[2,4]即可,包含中括号哦
+                  BNRE: ${{ github.event.client_payload.BNRE || secrets.BNRE }}
                   PHRE: ${{ github.event.client_payload.PHRE || secrets.PHRE }}
                   HPRE: ${{ github.event.client_payload.HPRE || secrets.HPRE }}
                   HDSTR: ${{ github.event.client_payload.HDSTR || secrets.HDSTR }}
