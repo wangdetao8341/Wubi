@@ -6,7 +6,7 @@ name: 健康社区
 on:
     workflow_dispatch:
     schedule:
-        - cron: "15 14,17 * * *"
+        - cron: "15 14,22 * * *"
     repository_dispatch:
         types: jd_health
 
